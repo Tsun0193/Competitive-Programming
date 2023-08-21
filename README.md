@@ -16,12 +16,9 @@ Class: INT3512 20
 ## General info
 This repository contains my solutions for some problems in competitive programming. I will update it regularly.
     
-```markdown
-Name: Dang Sy Duy
-ID: 21020461
-Class: INT3512 20
-```
-
+> Name: Dang Sy Duy
+> ID: 21020461
+> Class: INT3512 20
 
 ## Languages
 * C++
