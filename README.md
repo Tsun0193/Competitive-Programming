@@ -28,4 +28,5 @@ Class: INT3512 20
 * Python
 
 ## Topics
-* [Backtracking](#backtracking)
+* [Backtracking](https://github.com/Tsun0193/Competitive-Programming/tree/main/Backtrack%20(Recursion))
+
