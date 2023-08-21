@@ -25,7 +25,6 @@ This repository contains my solutions for some problems in competitive programmi
 ## Progress
 Below are images from CP platforms:
 
-### Leetcode
-*[Profile](https://leetcode.com/dduy193/)
+### [Leetcode](https://leetcode.com/dduy193/)
 ![Leetcode](/Asset/Leetcode_Progress.png)
 
