@@ -15,7 +15,8 @@ bool check(int i, int j) {
     return true;
 }
 
-void backtrack(int i, int& cnt) {
+int backtrack(int i) {
+    int cnt = 0;
     for(int j = 1; j <= n; j++) {
         if(check(i, j)) {
             a[i] = j;
@@ -23,15 +24,15 @@ void backtrack(int i, int& cnt) {
                 cnt++;
             }
             else {
-                backtrack(i+1, cnt);
+                cnt += backtrack(i+1);
             }
         }
     }
+    return cnt;
 }
 
 signed main() {
     cin >> n;
-    backtrack(1, cnt);
-    cout << cnt;
+    cout << backtrack(1);
     return 0;
 }
