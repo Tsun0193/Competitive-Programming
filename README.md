@@ -21,6 +21,7 @@ This repository contains my solutions for some problems in competitive programmi
 
 ## Topics
 * [Backtracking](https://github.com/Tsun0193/Competitive-Programming/tree/main/Backtrack%20(Recursion))
+* [Dynamic Programming](https://github.com/Tsun0193/Competitive-Programming/tree/main/DP)
 
 ## Progress
 Below are images from CP platforms:
