@@ -7,7 +7,7 @@
 * [Progress](#progress)
 
 ## General info
-This repository contains my solutions for some problems in competitive programming. I will update it regularly.
+This repository contains my solutions for some classical problems in competitive programming. I will update it regularly.
     
 > Name: Dang Sy Duy
 >
@@ -21,7 +21,7 @@ This repository contains my solutions for some problems in competitive programmi
 
 ## Topics
 * [Backtracking](https://github.com/Tsun0193/Competitive-Programming/tree/main/Backtrack%20(Recursion))
-* [Dynamic Programming](https://github.com/Tsun0193/Competitive-Programming/tree/main/DP)
+* [Dynamic Programming](https://github.com/Tsun0193/Competitive-Programming/tree/main/Dynamic%20Programming)
 
 ## Progress
 Below are images from CP platforms:
