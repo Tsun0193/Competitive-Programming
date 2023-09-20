@@ -53,13 +53,14 @@ void input(){
 }
 
 void solve(){
-    memset(dp, 0, sizeof(dp));
+    int dp[k+1][n+1];
+    memset(dp,0,sizeof(dp));
     int i = 0;
-    while(dp[n] < k) {
-        for(int j = 1; j <= n; j++) {
-            dp[j] += dp[j] + 1;
-        }
+    while (dp[i][n] < k) {
         i++;
+        for (int j = 1; j <= n; j++) {
+            dp[i][j] = 1 + dp[i - 1][j - 1] + dp[i - 1][j];
+        }
     }
     cout << i;
     return;
@@ -70,15 +71,16 @@ void output(){
 }
 
 signed main() {
-    #ifndef ONLINE_JUDGE
-        IO();
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     IO();
+    // #endif
     IOS();
-    int q;
-    cin >> q;
-    for(int az=0;az<q;az++){
+    // int q;
+    // cin >> q;
+    // for(int az=0;az<q;az++){
         input();
         solve();
         output();
-    }
+    // }
+    return 0;
 }

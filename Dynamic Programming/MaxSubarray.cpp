@@ -1,20 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std; 
 
-int a[100005];
 int n;
-int dp[100005];
+int a[100005];
 
 signed main() {
     cin >> n;
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }
+
+    vector<int> dp(n+1, 0);
     dp[0] = 0;
-    for(int i = 1; i < n + 1; i++) {
+    for(int i = 1; i <= n; i++) {
         dp[i] = max(dp[i-1] + a[i-1], a[i-1]);
     }
-    cout << *max_element(dp, dp + n + 1);
-    return 0;
+    cout << dp[n];
 }
-// Time complexity: O(n)
