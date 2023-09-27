@@ -5,6 +5,7 @@ using namespace std;
 #define int long long
 int n;
 
+//O(n^2)
 int Catalan(int n) {
     int dp[n + 1];
     dp[0] = 1;
@@ -18,6 +19,12 @@ int Catalan(int n) {
     }
     return dp[n];
 }
+
+//O(n) with inverse modulo
+int Catalan2(int n) {
+    
+}
+
 
 signed main() {
     cin >> n;

@@ -17,6 +17,27 @@ int LCS_1(string a, string b) {
             }
         }
     }
+    // tracing
+    int i = a.size();
+    int j = b.size();
+    string ans = "";
+    while(i > 0 && j > 0) {
+        if(a[i - 1] == b[j - 1]) {
+            ans += a[i - 1];
+            i--;
+            j--;
+        }
+        else {
+            if(dp[i - 1][j] > dp[i][j - 1]) {
+                i--;
+            }
+            else {
+                j--;
+            }
+        }
+    }
+    reverse(ans.begin(), ans.end());
+    cout << ans << "\n";
     return dp[a.size()][b.size()];
 }
 //DP Approach: O(mn)

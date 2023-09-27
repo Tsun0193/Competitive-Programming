@@ -17,21 +17,16 @@ int LIS1(vector<int> &a) {
 // Time complexity: O(n^2)
 
 int LIS2(vector<int> &a) {
-    vector<int> dp(n + 1, INT_MAX);
-    dp[0] = INT_MIN;
+    vector<int> dp;
     for(int i = 0; i < n; i++) {
-        int j = upper_bound(dp.begin(), dp.end(), a[i]) - dp.begin();
-        if(dp[j - 1] < a[i] && a[i] < dp[j]) {
-            dp[j] = a[i];
+        auto it = lower_bound(dp.begin(), dp.end(), a[i]); // Strictly increasing, use upper_bound for non-decreasing
+        if(it == dp.end()) {
+            dp.push_back(a[i]);
+        } else {
+            *it = a[i];
         }
     }
-    int ans = 0;
-    for(int i = 0; i <= n; i++) {
-        if(dp[i] != INT_MAX) {
-            ans = i;
-        }
-    }
-    return ans;
+    return dp.size();
 }
 
 signed main() {
